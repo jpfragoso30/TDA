@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "ComplexNumber.h"
+#include "../libs/ComplexNumber.h"
 
 ComplexNumber newComplexNumber(void)
 {

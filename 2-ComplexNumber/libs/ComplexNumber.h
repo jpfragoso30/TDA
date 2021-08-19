@@ -9,6 +9,7 @@
 
 #define COMPLEX_NUMBER struct _Complex_Number
 
+//Concept/DataStructure
 COMPLEX_NUMBER
 {
     float real;
