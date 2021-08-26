@@ -9,9 +9,33 @@ ComplexNumber newComplexNumber(void)
     return my_number;
 };
 
-ComplexNumber setComplexNumber(ComplexNumber new_number, float real, float imaginary)
+ComplexNumber setComplexNumber(ComplexNumber phasor, float real, float imaginary)
 {
-    new_number->real = real;
-    new_number->imaginary = imaginary;
-    return new_number;
+    phasor->real = real;
+    phasor->imaginary = imaginary;
+    return phasor;
+};
+
+ComplexNumber getComplexNumberComponents(ComplexNumber phasor, float *real, float *imaginary)
+{
+    *real = phasor->real;
+    *imaginary = phasor->imaginary;
+    return phasor;
+};
+
+ComplexNumber freeComplexNumber(ComplexNumber target)
+{
+    free(target);
+    target = NULL;
+    return target;
+};
+
+float getReal(ComplexNumber number)
+{
+    return number->real;
+};
+
+float getImaginary(ComplexNumber number)
+{
+    return number->imaginary;
 };

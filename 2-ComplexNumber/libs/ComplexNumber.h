@@ -20,4 +20,14 @@ typedef COMPLEX_NUMBER *ComplexNumber;
 //Generator/Constructor
 ComplexNumber newComplexNumber(void);
 
+ComplexNumber setComplexNumber(ComplexNumber phasor, float real, float imaginary);
+
+ComplexNumber getComplexNumberComponents(ComplexNumber phasor, float *real, float *imaginary);
+
+ComplexNumber freeComplexNumber(ComplexNumber target);
+
+float getReal(ComplexNumber number);
+
+float getImaginary(ComplexNumber number);
+
 #endif //ComplexNumber_h
