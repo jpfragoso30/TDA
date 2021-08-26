@@ -8,7 +8,7 @@ All: .PHONY unity.o
 
 test:| unity.o ComplexNumber.o test_ComplexNumberInit.o
 	gcc -o test unity.o ComplexNumber.o test_ComplexNumberInit.o
-
+	
 test_ComplexNumberInit.o: ./tests/test_ComplexNumberInit.c
 	gcc -c ./tests/test_ComplexNumberInit.c
 
