@@ -7,6 +7,8 @@
 #define EMPTY 0
 #define INITSIZE 5
 #define NEWSIZE 10
+#define INDEX 7
+#define VALUE 117.00
 
 void setUp(void)
 {
@@ -37,12 +39,28 @@ void test_ListResize(void)
     TEST_ASSERT_EQUAL(NEWSIZE, test_list->elements);
 }
 
+void test_ListSetValues(void)
+{
+    puts("Testing List Set Values function");
+    List *test_list = NULL;
+    test_list = InitList(INITSIZE);
+    TEST_ASSERT_NOT_NULL(test_list);
+    TEST_ASSERT_EQUAL(INITSIZE, test_list->elements);
+    test_list = SetListSize(test_list, NEWSIZE);
+    TEST_ASSERT_NOT_NULL(test_list);
+    TEST_ASSERT_EQUAL(NEWSIZE, test_list->elements);
+    test_list = SetListValues(test_list, INDEX, VALUE);
+    TEST_ASSERT_NOT_NULL(test_list);
+    TEST_ASSERT_EQUAL(VALUE, test_list->list[INDEX]);
+}
+
 int main(void)
 {
     UNITY_BEGIN();
 
     RUN_TEST(test_ListInit, __LINE__);
     RUN_TEST(test_ListResize, __LINE__);
+    RUN_TEST(test_ListSetValues, __LINE__);
 
     return UNITY_END();
 }
