@@ -21,6 +21,8 @@ typedef LIST List;
 //Generator/Constructor
 List *InitList(size_t elements);
 
+List *SetListSize(List *myList, size_t newElements);
+
 void printList(List *myList);
 
 #endif //List_h

@@ -13,6 +13,14 @@ List *InitList(size_t elements)
     return newList;
 };
 
+List *SetListSize(List *myList, size_t newElements)
+{
+    myList->elements = newElements;
+    myList->list = realloc(myList, newElements * sizeof(float));
+
+    return myList;
+};
+
 void printList(List *myList)
 {
     for (size_t n = 0; n < myList->elements; n++)
