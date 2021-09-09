@@ -1,5 +1,5 @@
 /**
-*@author Juan Fragoso
+*@author Juan Fragoso, Edson Garcia
 *@date 09/02/2021
 *@name List
 **/
@@ -22,6 +22,8 @@ typedef LIST List;
 List *InitList(size_t elements);
 
 List *SetListSize(List *myList, size_t newElements);
+
+List *SetValue(List *myList, size_t index, float value);
 
 void printList(List *myList);
 
