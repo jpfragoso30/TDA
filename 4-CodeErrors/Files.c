@@ -2,35 +2,31 @@
 #include <stdlib.h>
 #include "./Files.h"
 
-//private functions or static functions
-
 static ERROR_CODE Exists(FILE *fileQuery)
 {
     if (fileQuery == NULL)
     {
-        fprintf(stderr, "FILE ERROR %d", FILE_NOT_FOUND);
+        fprintf(stderr, "FILE ERROR %d IN %s: LINE %d\n", FILE_NOT_FOUND, __FILE__, __LINE__);
         return FILE_NOT_FOUND;
-        exit(FILE_NOT_FOUND);
     }
     else
         return ERROR_OK;
 }
 
-//public functions
-
 FILE *openFile(char *fileName, char *mode)
-{ //pipes - data flows inside PC
+{
     FILE *newFile = NULL;
 
     newFile = fopen(fileName, mode);
+    fprintf(stderr, "%p\n", newFile);
 
-    //error codes - validations
-    if (Exists(newFile)) // if 1 === true
+    if (Exists(newFile) != FILE_NOT_FOUND)
     {
         return newFile;
     }
     else
     {
+        fputs("File not found\n", stderr);
         return NULL;
     }
 }

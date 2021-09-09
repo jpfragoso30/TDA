@@ -1,0 +1,5 @@
+warning: this program uses gets(), which is unsafe.
+main.c
+eg.txt
+0x7fff807fa320
+FILE eg.txt OPENED SUCCESSFULLY
