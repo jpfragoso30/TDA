@@ -60,7 +60,7 @@ int main(void)
 
     RUN_TEST(test_ListInit, __LINE__);
     RUN_TEST(test_ListResize, __LINE__);
-    RUN_TEST(test_ListSetValues, __LINE__);
+    RUN_TEST(test_SetValue, __LINE__);
 
     return UNITY_END();
 }
