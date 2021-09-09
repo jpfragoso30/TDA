@@ -51,7 +51,7 @@ void test_SetValue(void)
     TEST_ASSERT_EQUAL(NEWSIZE, test_list->elements);
     test_list = SetValue(test_list, INDEX, VALUE);
     TEST_ASSERT_NOT_NULL(test_list);
-    TEST_ASSERT_EQUAL_FLOAT(VALUE, *(test_list->list[INDEX]));
+    TEST_ASSERT_EQUAL_FLOAT(VALUE, test_list->list[INDEX]);
 }
 
 int main(void)

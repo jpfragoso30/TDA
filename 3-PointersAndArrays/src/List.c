@@ -23,8 +23,8 @@ List *SetListSize(List *myList, size_t newElements)
 
 List *SetValue(List *myList, size_t index, float value)
 {
-    *((myList->list)+index)=value;
-    
+    *((myList->list) + index) = value;
+
     return myList;
 };
 
@@ -32,6 +32,6 @@ void printList(List *myList)
 {
     for (size_t n = 0; n < myList->elements; n++)
     {
-        printf("\tMemory Address: %p\n\tElement Number: %d\n\tValue: %f\n", (myList->list) + n, n, myList->list[n]);
+        printf("\tMemory Address: %p\n\tElement Number: %lu\n\tValue: %f\n", (myList->list) + n, n, myList->list[n]);
     }
 };
