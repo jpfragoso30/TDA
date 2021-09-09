@@ -39,9 +39,9 @@ void test_ListResize(void)
     TEST_ASSERT_EQUAL(NEWSIZE, test_list->elements);
 }
 
-void test_ListSetValues(void)
+void test_SetValue(void)
 {
-    puts("Testing List Set Values function");
+    puts("Testing List Set Value function");
     List *test_list = NULL;
     test_list = InitList(INITSIZE);
     TEST_ASSERT_NOT_NULL(test_list);
@@ -49,9 +49,9 @@ void test_ListSetValues(void)
     test_list = SetListSize(test_list, NEWSIZE);
     TEST_ASSERT_NOT_NULL(test_list);
     TEST_ASSERT_EQUAL(NEWSIZE, test_list->elements);
-    test_list = SetListValues(test_list, INDEX, VALUE);
+    test_list = SetValue(test_list, INDEX, VALUE);
     TEST_ASSERT_NOT_NULL(test_list);
-    TEST_ASSERT_EQUAL(VALUE, test_list->list[INDEX]);
+    TEST_ASSERT_EQUAL_FLOAT(VALUE, *(test_list->list[INDEX]));
 }
 
 int main(void)
@@ -60,7 +60,7 @@ int main(void)
 
     RUN_TEST(test_ListInit, __LINE__);
     RUN_TEST(test_ListResize, __LINE__);
-    RUN_TEST(test_ListSetValues, __LINE__);
+    RUN_TEST(test_SetValue, __LINE__);
 
     return UNITY_END();
 }
