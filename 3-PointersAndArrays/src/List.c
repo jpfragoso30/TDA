@@ -21,6 +21,13 @@ List *SetListSize(List *myList, size_t newElements)
     return myList;
 };
 
+List *SetValue(List *myList, size_t index, float value)
+{
+    *((myList->list)+index)=value;
+    
+    return myList;
+};
+
 void printList(List *myList)
 {
     for (size_t n = 0; n < myList->elements; n++)
