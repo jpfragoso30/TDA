@@ -6,7 +6,7 @@ static ERROR_CODE Exists(FILE *fileQuery)
 {
     if (fileQuery == NULL)
     {
-        fprintf(stderr, "FILE ERROR %d IN %s: LINE %d\n", FILE_NOT_FOUND, __FILE__, __LINE__);
+        fprintf(stderr, "FILE NOT FOUND ERROR %d IN %s: LINE %d\n", FILE_NOT_FOUND, __FILE__, __LINE__);
         return FILE_NOT_FOUND;
     }
     else

@@ -1,0 +1,5 @@
+/Users/frags/Desktop/TDA/TDA/7-CMake/build/CMakeFiles/rebuild_cache.dir
+/Users/frags/Desktop/TDA/TDA/7-CMake/build/CMakeFiles/edit_cache.dir
+/Users/frags/Desktop/TDA/TDA/7-CMake/build/src/CMakeFiles/rebuild_cache.dir
+/Users/frags/Desktop/TDA/TDA/7-CMake/build/src/CMakeFiles/edit_cache.dir
+/Users/frags/Desktop/TDA/TDA/7-CMake/build/src/CMakeFiles/myFirstModularApp.dir

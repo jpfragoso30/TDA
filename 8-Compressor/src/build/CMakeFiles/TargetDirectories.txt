@@ -1,0 +1,3 @@
+/Users/frags/Desktop/5tosemestre/TDA/TDA/8-Compressor/src/build/CMakeFiles/rebuild_cache.dir
+/Users/frags/Desktop/5tosemestre/TDA/TDA/8-Compressor/src/build/CMakeFiles/edit_cache.dir
+/Users/frags/Desktop/5tosemestre/TDA/TDA/8-Compressor/src/build/CMakeFiles/binaryBuffer.dir
