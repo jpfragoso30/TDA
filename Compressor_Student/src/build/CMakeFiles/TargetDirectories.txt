@@ -1,0 +1,4 @@
+/Users/frags/Desktop/5tosemestre/TDA/Compressor_Student/src/build/CMakeFiles/rebuild_cache.dir
+/Users/frags/Desktop/5tosemestre/TDA/Compressor_Student/src/build/CMakeFiles/edit_cache.dir
+/Users/frags/Desktop/5tosemestre/TDA/Compressor_Student/src/build/CMakeFiles/unity.dir
+/Users/frags/Desktop/5tosemestre/TDA/Compressor_Student/src/build/CMakeFiles/binaryBuffer.dir
